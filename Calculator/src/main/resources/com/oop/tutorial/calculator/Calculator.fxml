@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.tutorial.calculator.CalculatorController">
+   <children>
+      <Label layoutX="189.0" layoutY="52.0" prefHeight="48.0" prefWidth="223.0" text="MY CALCULATOR" textAlignment="CENTER" textFill="#121111" wrapText="true">
+         <font>
+            <Font name="High Tower Text" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfield_1" layoutX="56.0" layoutY="135.0" />
+      <TextField fx:id="textfield_2" layoutX="257.0" layoutY="135.0" />
+      <Button layoutX="56.0" layoutY="214.0" mnemonicParsing="false" onAction="#AddOnClick" text="Add" />
+      <Label fx:id="answerLabel" layoutX="436.0" layoutY="139.0" text="Answer" />
+      <Button layoutX="189.0" layoutY="214.0" mnemonicParsing="false" onAction="#SubOnClick" text="Subtract" />
+      <Button layoutX="111.0" layoutY="214.0" mnemonicParsing="false" onAction="#DivOnClick" text="Division" />
+      <Button layoutX="264.0" layoutY="214.0" mnemonicParsing="false" onAction="#MulOnClick" text="Multiplication" />
+      <Button layoutX="386.0" layoutY="200.0" mnemonicParsing="false" onAction="#ClearOnClick" prefHeight="55.0" prefWidth="89.0" text="Clear" />
+   </children>
+</AnchorPane>
